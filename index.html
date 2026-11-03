@@ -45,7 +45,12 @@
         h1 { font-size: 2.5rem; margin-bottom: 10px; }
         h2 { font-size: 1.5rem; margin: 50px 0 20px; border-bottom: 2px solid #1a1a1a; padding-bottom: 10px; }
         h3 { font-size: 1.1rem; margin: 25px 0 8px; color: #222; }
-        .tagline { font-size: 1.2rem; color: #555; margin-bottom: 10px; }
+        .tagline {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
         .updated { font-size: 0.8rem; color: #999; margin-bottom: 25px; }
 
         .metrics {
@@ -90,6 +95,7 @@
         @media (max-width: 600px) {
             h1 { font-size: 1.8rem; }
             .container { padding: 20px 15px; }
+            .tagline { white-space: normal; font-size: 1rem; }
             .metric { font-size: 0.75rem; padding: 6px 10px; }
             .job-header { flex-direction: column; }
         }
@@ -97,6 +103,7 @@
         @media print {
             body { background: #fff; }
             .container { max-width: none; padding: 0; }
+            .tagline { white-space: normal; }
             .metrics { flex-wrap: wrap; overflow: visible; }
             .metric { background: #fff; color: #000; border: 1px solid #000; }
             .job, .case { page-break-inside: avoid; }
