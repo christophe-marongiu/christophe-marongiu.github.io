@@ -52,6 +52,16 @@
             white-space: nowrap;
         }
         .updated { font-size: 0.8rem; color: #999; margin-bottom: 25px; }
+        .print-btn {
+            font-size: 0.8rem;
+            background: none;
+            border: 1px solid #999;
+            color: #666;
+            padding: 2px 10px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .print-btn:hover { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
 
         .metrics {
             display: flex;
@@ -110,6 +120,7 @@
             h2, h3 { page-break-after: avoid; }
             a { color: #000; }
             .updated { color: #666; }
+            .print-btn { display: none; }
             .contact::after {
                 content: "Online version: christophe-marongiu.github.io";
                 display: block;
@@ -125,7 +136,7 @@
     <div class="container">
         <h1>Christophe Marongiu</h1>
         <p class="tagline">Senior QHSSE Advisor | 26 Years Africa, APAC & Middle East | Seek and resolve system pressures</p>
-        <p class="updated">Last updated: November 2026</p>
+        <p class="updated">Last updated: November 2026 · <button class="print-btn" onclick="window.print()">Print / Save as PDF</button></p>
 
         <div class="metrics">
             <span class="metric">8M+ LTI-Free Manhours</span>
